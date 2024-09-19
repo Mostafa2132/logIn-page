@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "login";
+}
+body{
+        
+    background-image: url(../imgs/bg.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+@font-face {
+    font-family: "login";
+    src: url(../font/TitilliumWeb-Regular.ttf);
+}
+h1{
+    font-size: 3.5rem;
+    color: #17a3b86a;
+}
+.form-control{
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d5dee7;
+    box-shadow: none !important;
+    color: #fff;
+
+}
+input{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+.container{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgba(0, 0, 0, .5);
+}
+
+::placeholder{
+    color: #d5dee7 !important;
+}
+
+.container p a {
+    transition: all .5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.container p a:hover{
+    text-decoration: underline;
+}
+    

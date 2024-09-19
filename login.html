@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+     <div class="container py-5 w-50  px-4 text-center shadow-lg rounded-2 "> 
+
+        <h1 class="text-info">Smart Login System</h1>
+        <form class="row g-3 p-4   ">
+            <div class="col-md-12 ">    
+              <input oninput="validation(this)" type="text" class="form-control form-control-lg text-white  " id="nameInp" placeholder="Enter Your Name">
+              <p class="text-danger mx-2 text-start d-none"> <i class="fa-solid fa-circle-exclamation"></i> The name must not contain numbers.</p>
+            </div>
+            <div class="col-md-12 ">
+              
+              <input oninput="validation(this)" type="email" class="form-control form-control-lg text-white  " id="EmailLogInp" placeholder="Enter Your Email">
+              <p class="text-danger mx-2 text-start d-none"> <i class="fa-solid fa-circle-exclamation"></i> The name must be vaild like exapmle@gmail.com.</p>
+
+            </div>
+            <div class="col-md-12 mb-3">
+              
+              <input oninput="validation(this)" type="password" class="form-control form-control-lg" id="passLogInp" placeholder="Enter Your Password">
+              <p class="text-danger mx-2 text-start d-none"> <i class="fa-solid fa-circle-exclamation"></i> The name must be contain at lest 1 char and at lest 8 chars.</p>
+
+            </div>
+            
+            <p class="succ text-success  fs-5 d-none ">Success</p> 
+            <p class="exists text-warning  fs-5  d-none ">You Email is aleardy Exist</p> 
+            <div class="col-md-12 pb-2">
+              <button type="button" class="btn-up btn fw-medium btn-outline-info w-100 form-control-lg fs-5 ">Sign Up</button>
+             
+            </div>
+            <p class=" sing-up fs-4 m-3 text-white">have an account? <a id="log" href="" class="text-info" > Signin </a></p>
+        
+          </form>
+    </div> 
+    
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="./js/index.js"></script>
+   
+</body>
+</html>

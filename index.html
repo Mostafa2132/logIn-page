@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Log in</title>
+</head>
+<body>
+
+    
+        <div class="container py-5 w-50  px-4 text-center shadow-lg rounded-2 ">
+            <h1 class="text-info">Smart Login System</h1>
+            <form class="row g-3 p-4   ">
+               
+                <div class="col-md-12 mb-2">
+                  
+                  <input   type="email" class="form-control form-control-lg text-white " id="EmailInp" placeholder="Enter Your Email">
+                </div>
+                <div class="col-md-12 mb-3">
+                  
+                  <input  type="password" class="form-control form-control-lg" id="passInp" placeholder="Enter Your Password">
+                </div>
+                
+                 <p class="data_vaild text-danger  fs-5 d-none ">incorrect email or password</p>
+                  <p class="reqInp text-danger fs-5  d-none">All inputs are req</p>
+                 <div class="col-md-12 pb-2">
+                  <a type="button" class="btn-in btn fw-medium btn-outline-info w-100 form-control-lg fs-5">Log in</a>
+                 
+        
+                </div>
+                 <p class="fs-4 m-3 text-white"  >Don’t have an account?  <a id="sign" class="text-info " href=""> Sign Up  </a></p>
+               
+        </div> 
+
+       
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
